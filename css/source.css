@@ -1,0 +1,22 @@
+.myheader{
+	color : #BA55D3!important;
+	margin-top : 5px;
+	margin-bottom : 15px;
+	margin-left : 20px;
+}
+#headerjumbo{
+	height : 90px;
+	width : 100%;
+	padding : 10px;
+	background-color : #ddd;
+	border-radius : 15px;
+}
+.margincontrol{
+	margin : 50px;
+	margin-top : 20px;
+	padding : 10px;
+}
+
+body{
+	background-color : #eef;
+}
