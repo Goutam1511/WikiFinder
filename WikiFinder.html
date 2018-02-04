@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WikiFinder</title>
+    <meta http-equiv=Content-type content="text/html; charset=utf-8">
+    <meta name=viewport content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+    
+    <link type=text/css href=css/bootstrap.min.css rel=stylesheet media=screen>
+    <link type=text/css href=css/font-awesome.min.css rel=stylesheet media=screen>
+    <link type=text/css href=css/jquery-ui.min.css rel=stylesheet media=screen>
+    <link type=text/css href=css/material.min.css rel=stylesheet media=screen>
+	<link type=text/css href=css/source.css rel=stylesheet media=screen>
+	<link type=text/css href=css/mdb.min.css rel=stylesheet media=screen>
+</head>
+
+<body>
+	<div class="jumbotron jumbotron-fluid" id="headerjumbo">
+		<h1 class="myheader">WikiFinder</h1>
+		<center><h3 class="myheader">Created by Goutam Bose</h3></center>
+	</div>
+	
+	<div class="container" style="color : #00008B; font-size : 15px;">
+		<div class="row" style="margin : 20px;">
+			<h4>Enter keyword and its context to search:</h4>
+		</div>
+		<div class="input-group margincontrol">
+			<span class="input-group-addon" id="basic-addon2"><i class="fa fa-search fa-2x" style="margin-top : -5px;" aria-hidden="true"></i>
+			</span>
+			<div class ="row">
+				<div class="col-xs-5">
+					<input type="text" class="form-control" id="textfield" style="font-size : 15px;" placeholder="Type Keyword here" aria-describedby="basic-addon2">
+				</div>
+				<div class="col-xs-5">
+					<input type="text" class="form-control" id="confield" style="font-size : 15px;" placeholder="Type Context here" aria-describedby="basic-addon2">
+				</div>
+				<span class="input-group-btn">
+					<button class="btn btn-outline-secondary btn-rounded waves-effect" id="ajaxhit" style="font-size : 12px; margin : 5px;" type="button">Go!</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" id="insertresult" style="color : #00008B; font-size : 15px;">
+		<div class="row">Finding results may take a few moments. Please wait...</div>
+	</div>
+	
+	
+    <script type=application/javascript src=js/jquery.min.js></script>
+    <script type=application/javascript src=js/material.min.js></script>
+    <script type=application/javascript src=js/bootstrap.min.js></script>
+    <script type=application/javascript src=js/async.min.js></script>
+	<script type=application/javascript src=js/mdb.min.js></script>
+	<script type=application/javascript src=js/source.js></script>
+</body>
