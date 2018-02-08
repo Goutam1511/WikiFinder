@@ -1,4 +1,4 @@
-var urllink = 'http://127.0.0.1:5002/';
+var urllink = 'https://diracwikifinder.appspot.com/';//Change this to Localhost IP if an WAMP/XAMMP server is used
 
 var htmltoshow = '';
 var pageid;
@@ -29,6 +29,7 @@ function ajaxcall(t,c){
 				htmltoshow = htmltoshow +'<button type="submit" id="export" class="btn btn-outline-secondary btn-rounded waves-effect" style="font-size : 12px;">Submit</button></div>';
 				$('#insertresult').html(htmltoshow);
 			});
+		//$.ajax()
 };
 
 $(document).ready(function()
@@ -49,7 +50,11 @@ $(document).ready(function()
 	{
 		title = $('#textfield').val();
 		context = $('#confield').val();
+		$('#insertresult').html('<br><center><div class="conatiner" id="loader"></div></center>');
+		$('#loader').show();
 		ajaxcall(title,context);
+		$('#textfield').val("");
+		$('#confield').val("");
 	});
 	
 	$(document).on("click",'#export',function()
